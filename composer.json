@@ -1,0 +1,42 @@
+{
+    "name": "micseres/micro-client-reactor",
+    "description": "Micro Client Reactor",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "zogxray",
+            "email": "zogxray@gmail.com"
+        },
+        {
+            "name": "Andrii Yakovlev",
+            "email": "yawa20@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-sockets": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Micseres\\MicroClientReactor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Micseres\\MicroClientReactor\\Tests\\": "Tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
