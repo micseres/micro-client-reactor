@@ -8,7 +8,6 @@
 
 namespace Micseres\MicroClientReactor;
 
-use Micseres\MicroClientReactor\Exception\CallbackException;
 use Micseres\MicroClientReactor\Exception\ServiceException;
 use Micseres\MicroClientReactor\Exception\SocketException;
 use Micseres\MicroClientReactor\Exception\ApproveResponseException;
@@ -37,10 +36,6 @@ class MicroClientReactor
     private $socket;
 
     /**
-     * @var string
-     */
-    private $route;
-    /**
      * @var float
      */
     private $wait;
@@ -49,14 +44,12 @@ class MicroClientReactor
      * MicroServiceReactor constructor.
      * @param string $ip
      * @param int $port
-     * @param string $route
      * @param float $wait
      */
-    public function __construct(string $ip, int $port, string $route, float $wait = self::RESPONSE_WAIT_TIME)
+    public function __construct(string $ip, int $port, float $wait = self::RESPONSE_WAIT_TIME)
     {
         $this->ip = $ip;
         $this->port = $port;
-        $this->route = $route;
         $this->wait = $wait;
     }
 
