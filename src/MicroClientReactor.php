@@ -19,7 +19,7 @@ use Micseres\MicroClientReactor\Response\ApproveResponse;
  * Class MicroClientReactor
  * @package Micseres\MicroClientReactor
  */
-class MicroClientReactor
+class MicroClientReactor implements MicroClientReactorInterface
 {
     const RESPONSE_WAIT_TIME = 0.25;
 
