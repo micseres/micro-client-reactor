@@ -12,7 +12,7 @@ namespace Micseres\MicroClientReactor\Exception;
  * Class TimeoutException
  * @package Micseres\MicroClientReactor\Exception
  */
-class TimeoutException extends \Exception
+class TimeoutException extends MicseresException
 {
 
 }

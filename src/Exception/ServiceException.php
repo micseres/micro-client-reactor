@@ -12,7 +12,7 @@ namespace Micseres\MicroClientReactor\Exception;
  * Class ServiceException
  * @package Micseres\MicroClientReactor\Exception
  */
-class ServiceException extends \Exception
+class ServiceException extends MicseresException
 {
 
 }

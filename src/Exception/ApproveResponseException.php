@@ -12,7 +12,7 @@ namespace Micseres\MicroClientReactor\Exception;
  * Class ApproveRequestException
  * @package Micseres\MicroClientReactor\Exception
  */
-class ApproveResponseException extends \Exception
+class ApproveResponseException extends MicseresException
 {
 
 }
